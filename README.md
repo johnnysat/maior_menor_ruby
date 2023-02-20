@@ -4,7 +4,8 @@ O projeto é de um jogo de advinhação onde o usuário precisa advinhar qual é
 ## Entendendo Ruby
 Comando puts escreve no console. Se for deixado em branco, criará uma linha inteira sem nada escrito.<br>
 Comando gets captura o que foi escrito no console.<br>
-O comando gets adiciona uma linha abaixo automaticamente. Para não adicionar essa linha, o comando gets.chomp irá funcionar. 
+O comando gets adiciona uma linha abaixo automaticamente. Para não adicionar essa linha, o comando gets.chomp irá funcionar. <br>
+<strong>Comentários</strong> são feitos com "#" para comentar uma linha ou "=begin" para começar uma linha e "=end" para terminar em outra.
 
 ## Convertendo String em Int
 Ruby é uma linguagem tipada. Então ele não entende que "17" é igual a 17, já que um é string e outro é int. Nesse caso, precisamos converter a string em int. É impossível fazer isso através do comando "to_i". No meu código fiz diferente da aula e não adicionei o to_i na resposta recebida, mas diretamente na variável. Assim eu não preciso converter toda vez que vou utilizar a variável novamente.
