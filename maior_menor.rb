@@ -15,5 +15,5 @@ puts "Você chutou o número #{chute}... Será que você acertou?"
 if numero_secreto == chute
   puts "Acertou!"
   else
-    puts "Errou"
+    puts "Errou!"
 end
