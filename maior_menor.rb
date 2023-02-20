@@ -15,6 +15,10 @@ acertou = numero_secreto == chute;
 
 if acertou
   puts "Acertou!"
-  else
-    puts "Errou!"
+else
+    if chute > numero_secreto
+      puts "você chutou alto, tente mais baixo!"
+    else chute < numero_secreto
+      puts "Você chutou baixo, tente mais alto!"
+    end
 end
