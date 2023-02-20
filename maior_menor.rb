@@ -17,7 +17,8 @@ for tentativa in 1..total_tentativas
   acertou = numero_secreto == chute
 
   if acertou
-    puts "Acertou!"
+    puts "Acertou! Você venceu o jogo!"
+    break
   elsif chute > numero_secreto
     puts "Você chutou alto, tente mais baixo!"
   elsif chute < numero_secreto
