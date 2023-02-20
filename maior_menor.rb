@@ -11,8 +11,9 @@ puts "Tentativa 1"
 puts "Qual é o meu  número secreto?"
 chute = gets.chomp.to_i
 puts "Você chutou o número #{chute}... Será que você acertou?"
+acertou = numero_secreto == chute;
 
-if numero_secreto == chute
+if acertou
   puts "Acertou!"
   else
     puts "Errou!"
