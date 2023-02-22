@@ -6,14 +6,15 @@ def boas_vindas
   puts "Vamos começar o jogo, #{nome} ";
 end
 
-boas_vindas;
-
-def numero_maquina
-  puts "Escolhendo número secreto entre 0 e 100..."; 
-  numero_secreto = rand(101);
+def sorteia_numero_secreto
+  puts "Escolhendo número secreto entre 0 e 10..."; 
+  numero_secreto = rand(11);
 end
 
-numero_maquina
+boas_vindas;
+numero_secreto = sorteia_numero_secreto;
+nome = boas_vindas;
+
 
 def jogador_tentativas
   puts "Número escolhido! Vamos advinhar qual é?"
@@ -29,9 +30,9 @@ def jogador_tentativas
     if acertou
       puts "Acertou! Você venceu o jogo, #{nome}!"
       break
-    elsif chute > numero_secreto
+      elsif chute > numero_secreto
       puts "Você chutou alto, tente mais baixo!"
-    elsif chute < numero_secreto
+     elsif chute < numero_secreto
       puts "Você chutou baixo, tente mais alto!"
     end
   end
