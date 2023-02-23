@@ -19,5 +19,9 @@ Semelhante ao javascript, o if adiciona uma condicional. No nosso código, caso 
 ## Definir número aleatoriamente
 Com o trecho "numero_secreto = rand(101);" é possível definir um número aleatoriamente entre o número 0 e o 100. O 101 é o máximo e, por isso, não é exibido.
 
+## Variáveis Globais e porque não usar
+Variáveis globais em programação são aquelas que podem ser acessadas de qualquer parte do código, independentemente do escopo onde foram criadas. O problema com as variáveis globais é que elas podem ser modificadas de forma inesperada, tornando o comportamento do programa difícil de entender e depurar.<br>
+Quando variáveis globais são modificadas em uma parte do código, pode ser difícil rastrear onde essa modificação ocorreu e quais são os efeitos dela em outras partes do programa. Além disso, quando um programa é dividido em módulos ou bibliotecas, variáveis globais podem causar conflitos entre diferentes partes do programa.
+
 ### Uso de ponto & vírgula em Ruby
 É útil para adicionar diferentes comandos em uma mesma linha. Como diferentes variáveis "a = 1; b = 2; c = 3;" ou no final da linha para tornar mais legível. O Ruby entende que o comando foi finalizado quando a linha é quebrada, então não é necessário adicionar ao final do comando.
