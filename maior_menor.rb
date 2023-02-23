@@ -11,12 +11,13 @@ def sorteia_numero_secreto
   numero_sorteado = rand(11);
 end
 
-boas_vindas;
+nome = boas_vindas
 numero_secreto = sorteia_numero_secreto;
 
 puts "Número escolhido! Vamos advinhar qual é?"
 puts "\n"
 total_tentativas = 5
+
 for tentativa in 1..total_tentativas
   puts "Tentativa #{tentativa.to_s} de #{total_tentativas.to_s}"
   puts "Qual é o meu número secreto?"
@@ -25,7 +26,7 @@ for tentativa in 1..total_tentativas
   acertou = numero_secreto == chute
 
   if acertou
-    puts "Acertou! Você venceu o jogo, #{nome}!"
+    puts "Acertou! Você venceu o jogo!"
     break
     elsif chute > numero_secreto
     puts "Você chutou alto, tente mais baixo!"
