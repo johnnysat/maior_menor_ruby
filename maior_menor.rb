@@ -27,16 +27,24 @@ puts "Número escolhido! Vamos advinhar qual é?"
 puts "\n"
 total_tentativas = 5
 
-for tentativa in 1..total_tentativas
-  chute = pede_numero(tentativa, total_tentativas)
+def verifica_se_acertou (numero_secreto, chute)
   acertou = numero_secreto == chute
 
   if acertou
     puts "Acertou! Você venceu o jogo!"
-    break
+    return true
   elsif chute > numero_secreto
     puts "Você chutou alto, tente mais baixo!"
+    return false
   elsif chute < numero_secreto
     puts "Você chutou baixo, tente mais alto!"
+    return false
+  end
+end
+
+for tentativa in 1..total_tentativas
+  chute = pede_numero(tentativa, total_tentativas)
+  if verifica_se_acertou (numero_secreto, chute)
+    break
   end
 end
