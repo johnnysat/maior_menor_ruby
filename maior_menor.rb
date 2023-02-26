@@ -44,7 +44,7 @@ end
 
 for tentativa in 1..total_tentativas
   chute = pede_numero(tentativa, total_tentativas)
-  if verifica_se_acertou (numero_secreto, chute)
+  if verifica_se_acertou(numero_secreto, chute)
     break
   end
 end
