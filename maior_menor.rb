@@ -33,14 +33,15 @@ def verifica_se_acertou (numero_secreto, chute)
   if acertou
     puts "Acertou! Você venceu o jogo!"
     return true
-  end
   elsif chute > numero_secreto
     puts "Você chutou alto, tente mais baixo!"
   elsif chute < numero_secreto
     puts "Você chutou baixo, tente mais alto!"
   end
+  
   false
 end
+
 
 for tentativa in 1..total_tentativas
   chute = pede_numero(tentativa, total_tentativas)
