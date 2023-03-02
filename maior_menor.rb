@@ -12,20 +12,17 @@ def sorteia_numero_secreto
   numero_sorteado = rand(11);
 end
 
-def pede_numero(tentativa, total_tentativas)
+def pede_numero(chutes, tentativa, total_tentativas)
   puts "Tentativa #{tentativa.to_s} de #{total_tentativas.to_s}"
+  puts "Você chutou #{chutes} até agora"
   puts "Qual é o meu número secreto?"
   chute = gets.chomp.to_i
   puts "Você chutou o número #{chute}... Será que você acertou?"
   chute
 end
 
-nome = boas_vindas
-numero_secreto = sorteia_numero_secreto;
-
 puts "Número escolhido! Vamos advinhar qual é?"
 puts "\n"
-total_tentativas = 5
 
 def verifica_se_acertou (numero_secreto, chute)
   acertou = numero_secreto == chute
@@ -42,8 +39,19 @@ def verifica_se_acertou (numero_secreto, chute)
   false
 end
 
+nome = boas_vindas
+numero_secreto = sorteia_numero_secreto;
+total_tentativas = 5
+
+chutes = []
+total_de_chutes = 0;
+
 for tentativa in 1..total_tentativas
-  chute = pede_numero(tentativa, total_tentativas)
+
+  chute = pede_numero(chutes, tentativa, total_tentativas)
+  chutes[total_de_chutes] = chute
+  total_de_chutes = total_de_chutes + 1
+
   if verifica_se_acertou(numero_secreto, chute)
     break
   end
