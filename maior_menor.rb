@@ -41,16 +41,14 @@ end
 
 nome = boas_vindas
 numero_secreto = sorteia_numero_secreto;
-total_tentativas = 5
 
+total_tentativas = 5
 chutes = []
-total_de_chutes = 0;
 
 for tentativa in 1..total_tentativas
 
   chute = pede_numero(chutes, tentativa, total_tentativas)
-  chutes[total_de_chutes] = chute
-  total_de_chutes = total_de_chutes + 1
+  chutes << chute
 
   if verifica_se_acertou(numero_secreto, chute)
     break
