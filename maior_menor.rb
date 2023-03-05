@@ -8,12 +8,12 @@ def boas_vindas
 end
 
 def sorteia_numero_secreto
-  puts "Escolhendo número secreto entre 0 e 10..."; 
+  puts "Escolhendo número secreto entre 0 e 100"; 
   numero_sorteado = rand(100);
 end
 
 def pede_numero(chutes, tentativa, total_tentativas)
-  puts "Tentativa #{tentativa.to_s} de #{total_tentativas.to_s}"
+  puts "Tentativa #{tentativa} de #{total_tentativas}"
   puts "Você chutou #{chutes} até agora"
   puts "Qual é o meu número secreto?"
   chute = gets.strip.to_i
