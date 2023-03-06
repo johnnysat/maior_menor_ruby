@@ -25,5 +25,8 @@ Quando variáveis globais são modificadas em uma parte do código, pode ser dif
 
 ## O Operador "<<" em Ruby
 O operador << é uma maneira concisa e comum de adicionar elementos a um array em Ruby. Exemplo ao adicionar novo chute ao array chamado chutes, no código.
+
+## IRB em Ruby
+RB é a abreviação de "Interactive Ruby". É um interpretador interativo que permite ao usuário executar o código Ruby linha por linha e obter respostas imediatas. Com o IRB, é possível testar pequenos trechos de código, experimentar com a sintaxe e entender melhor como o Ruby funciona. O IRB é uma ferramenta útil para aprender Ruby e para desenvolver pequenos trechos de código para testes rápidos. Além disso, é possível usá-lo para depurar código e descobrir erros em um programa. Em resumo, o IRB é uma ferramenta essencial para qualquer programador Ruby que deseja desenvolver e depurar código de forma rápida e eficiente.
 ### Uso de ponto & vírgula em Ruby
 É útil para adicionar diferentes comandos em uma mesma linha. Como diferentes variáveis "a = 1; b = 2; c = 3;" ou no final da linha para tornar mais legível. O Ruby entende que o comando foi finalizado quando a linha é quebrada, então não é necessário adicionar ao final do comando.
