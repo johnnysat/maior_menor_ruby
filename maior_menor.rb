@@ -54,3 +54,7 @@ for tentativa in 1..total_tentativas
     break
   end
 end
+
+unless chutes.include?(numero_secreto)
+  puts "Você não conseguiu acertar o número secreto que era #{numero_secreto}"
+end
