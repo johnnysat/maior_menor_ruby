@@ -29,6 +29,20 @@ O operador << é uma maneira concisa e comum de adicionar elementos a um array e
 ## 'include?' 
 O método include? é usado para verificar se um elemento está presente em um array. Portanto, estamos verificando se o número secreto está presente no array chutes do usuário. Se ele não estiver presente, a mensagem será exibida com o número secreto. O unless é usado para negar a condição do if, ou seja, ele executa o bloco de código somente se a condição for falsa.
 
+## unless
+A função do unless em Ruby é semelhante ao if, mas com a lógica invertida. Enquanto o if executa um bloco de código se uma expressão booleana for verdadeira, o unless executa um bloco de código se a expressão booleana for falsa.<br>
+A sintaxe básica do unless é a seguinte:<br>
+'unless expressão_booleana <br>
+ código a ser executado se a expressão booleana for falsa<br>
+end'<br>
+Por exemplo, se quisermos imprimir uma mensagem na tela somente se um número não for igual a zero, podemos usar o unless da seguinte maneira:
+numero = 42<br>
+unless numero == 0<br>
+  puts "O número é diferente de zero!"<br>
+end<br>
+Nesse exemplo, o puts só será executado se o número for diferente de zero. Se o número for zero, o bloco de código dentro do unless será ignorado.
+
+
 ## IRB em Ruby
 RB é a abreviação de "Interactive Ruby". É um interpretador interativo que permite ao usuário executar o código Ruby linha por linha e obter respostas imediatas. Com o IRB, é possível testar pequenos trechos de código, experimentar com a sintaxe e entender melhor como o Ruby funciona. O IRB é uma ferramenta útil para aprender Ruby e para desenvolver pequenos trechos de código para testes rápidos. Além disso, é possível usá-lo para depurar código e descobrir erros em um programa. Em resumo, o IRB é uma ferramenta essencial para qualquer programador Ruby que deseja desenvolver e depurar código de forma rápida e eficiente.
 ### Uso de ponto & vírgula em Ruby
