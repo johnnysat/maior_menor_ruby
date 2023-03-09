@@ -41,7 +41,7 @@ end
 
 nome = boas_vindas
 numero_secreto = sorteia_numero_secreto;
-
+pontos_iniciais = 1000
 total_tentativas = 5
 chutes = []
 
@@ -49,6 +49,9 @@ for tentativa in 1..total_tentativas
 
   chute = pede_numero(chutes, tentativa, total_tentativas)
   chutes << chute
+
+  pontos_perdidos = (chute - numero_secreto) / 2
+  pontos_iniciais -= pontos_perdidos
 
   if verifica_se_acertou(numero_secreto, chute)
     break
@@ -58,3 +61,5 @@ end
 unless chutes.include?(numero_secreto)
   puts "Você não conseguiu acertar o número secreto que era #{numero_secreto}"
 end
+
+puts "Você ganhou #{pontos_iniciais} até agora"
