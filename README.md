@@ -1,5 +1,10 @@
 # Primeiros Passos com Ruby
-O projeto é de um jogo de advinhação onde o usuário precisa advinhar qual é o número advinhado pela máquina.
+O projeto é de um jogo de advinhação onde o usuário precisa advinhar qual é o número advinhado pela máquina. O projeto inclui: <br>
+1 - Usuário fala seu nome para a máquina através do prompt. <br>
+2 - Maquina define qual será o número sorteado entre 0 e 10.<br>
+3 - Usuário tenta advinhar qual é o número através de cinco tentativas. <br>
+4 - A máquina diz se o usuário precisa chutar um número maior ou um número menor. <br>
+5 - A máquina atribui uma pontuação ao usuário.<br>
 
 ## Entendendo Ruby
 Comando puts escreve no console. Se for deixado em branco, criará uma linha inteira sem nada escrito.<br>
