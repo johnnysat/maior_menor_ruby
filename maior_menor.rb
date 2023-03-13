@@ -50,7 +50,7 @@ for tentativa in 1..total_tentativas
   chute = pede_numero(chutes, tentativa, total_tentativas)
   chutes << chute
 
-  pontos_perdidos = (chute - numero_secreto) / 2
+  pontos_perdidos = (chute - numero_secreto) / 2.0
   pontos_iniciais -= pontos_perdidos
 
   if verifica_se_acertou(numero_secreto, chute)
