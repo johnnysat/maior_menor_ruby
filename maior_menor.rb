@@ -9,7 +9,7 @@ end
 
 def sorteia_numero_secreto
   puts "Escolhendo número secreto entre 0 e 10"; 
-  numero_sorteado = rand(11);
+  numero_sorteado = rand(200);
 end
 
 def pede_numero(chutes, tentativa, total_tentativas)
