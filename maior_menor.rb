@@ -8,7 +8,7 @@ def boas_vindas
 end
 
 def sorteia_numero_secreto
-  puts "Escolhendo número secreto entre 0 e 10"; 
+  puts "Escolhendo número secreto entre 0 e 100"; 
   numero_sorteado = rand(100);
 end
 
